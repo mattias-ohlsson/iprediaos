@@ -12,4 +12,8 @@ repo --name=iprediaos --baseurl=http://dl.dropbox.com/u/3922090/iprediaos/repo/
 generic-logos
 generic-release
 
+# I2P and IprediaOS packages
+i2p
+iprediaos-i2p-block-internet
+
 %end
