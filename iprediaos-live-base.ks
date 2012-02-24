@@ -1,6 +1,6 @@
 # iprediaos-live-base.ks
 #
-# Defines the basics for all kickstarts in the fedora-live branch
+# Defines the basics for all kickstarts in the iprediaos-live branch
 
 repo --name=iprediaos --baseurl=http://dl.dropbox.com/u/3922090/iprediaos/repo/
 
