@@ -9,7 +9,7 @@ repo --name=iprediaos --baseurl=http://dl.dropbox.com/u/3922090/iprediaos/repo/
 # Rebrand
 -fedora-logos
 -fedora-release*
-generic-logos
+iprediaos-logos
 generic-release
 
 # I2P and IprediaOS packages
