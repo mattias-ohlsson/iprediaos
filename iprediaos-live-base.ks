@@ -10,7 +10,8 @@ repo --name=iprediaos --baseurl=http://dl.dropbox.com/u/3922090/iprediaos/repo/
 -fedora-logos
 -fedora-release*
 iprediaos-logos
-generic-release
+iprediaos-release
+iprediaos-release-notes
 
 # I2P and IprediaOS packages
 i2p
