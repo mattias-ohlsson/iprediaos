@@ -16,5 +16,6 @@ iprediaos-release-notes
 # I2P and IprediaOS packages
 i2p
 iprediaos-i2p-block-internet
+iprediaos-i2p-configuration-proxy
 
 %end
