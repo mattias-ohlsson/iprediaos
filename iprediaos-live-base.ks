@@ -2,7 +2,7 @@
 #
 # Defines the basics for all kickstarts in the iprediaos-live branch
 
-repo --name=iprediaos --baseurl=http://dl.dropbox.com/u/3922090/iprediaos/repo/
+repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/releases/1/Everything/$basearch/os/
 
 %packages
 
