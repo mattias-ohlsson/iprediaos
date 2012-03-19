@@ -9,6 +9,9 @@ repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/
 # Remove
 -transmission*
 
+# Install
+ntp
+
 # Rebrand
 -fedora-logos
 -fedora-release*
