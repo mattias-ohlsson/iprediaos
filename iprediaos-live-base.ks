@@ -4,6 +4,9 @@
 
 repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/releases/1/Everything/$basearch/os/
 
+# Enable ntpd
+services --enabled=ntpd
+
 %packages
 
 # Remove
