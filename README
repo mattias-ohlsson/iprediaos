@@ -6,6 +6,8 @@ IprediaOS
     -f FSLABEL, --fslabel=FSLABEL
                         File system label (default based on config name).
 			Vanilla example: Fedora-16-i686-Live-Desktop.iso
+			CD labels are limited to 32 characters. Remove .iso 
+			for IprediaOS.
     --title=TITLE       Title used by syslinux.cfg file
 			Vanilla example: Fedora 16
 			Boot screen title.
