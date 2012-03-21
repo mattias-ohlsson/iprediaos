@@ -7,15 +7,15 @@ CACHEDIR	:= "/tmp/iprediaosbuild"
 livecd-desktop-i686: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv --config=iprediaos-livecd-desktop.ks \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
-	--product=IprediaOSProd \
-	--title=IprediaOSTitle \
+	--product="IprediaOS $(RELEASEVER)" \
+	--title="IprediaOS $(RELEASEVER)" \
 	--cache=$(CACHEDIR) && chmod 666 *.iso
 
 livecd-lxde-i686: reppackages reqroot setenforce0
 	setarch i686 livecd-creator -dv --config=iprediaos-livecd-lxde.ks \
         --fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
-	--product=IprediaOSProd \
-        --title=IprediaOSTitle \
+	--product="IprediaOS $(RELEASEVER)" \
+        --title="IprediaOS $(RELEASEVER)" \
         --cache=$(CACHEDIR) && chmod 666 *.iso
 
 reqroot:
