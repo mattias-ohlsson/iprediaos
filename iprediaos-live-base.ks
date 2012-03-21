@@ -11,6 +11,7 @@ services --enabled=ntpd.service
 
 # Remove
 -transmission*
+-cheese
 
 # Install
 ntp
