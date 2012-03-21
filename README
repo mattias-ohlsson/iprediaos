@@ -1,1 +1,14 @@
 IprediaOS
+
+- livecd-creator
+
+  Image options:
+    -f FSLABEL, --fslabel=FSLABEL
+                        File system label (default based on config name).
+			Vanilla example: Fedora-16-i686-Live-Desktop.iso
+    --title=TITLE       Title used by syslinux.cfg file
+			Vanilla example: Fedora 16
+			Boot screen title.
+    --product=PRODUCT   Product name used in syslinux.cfg boot stanzas and
+			Vanilla example: Fedora 16
+			Boot screen menu row.
