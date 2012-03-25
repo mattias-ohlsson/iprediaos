@@ -13,6 +13,7 @@ services --enabled=ntpd.service
 -transmission*
 -cheese
 -sane-backends
+-java-1.6.0-openjdk
 
 # Install
 ntp
