@@ -18,6 +18,17 @@ livecd-lxde-i686: reqpackages reqroot setenforce0
         --title="IprediaOS $(RELEASEVER)" \
         --cache=$(CACHEDIR) && chmod 666 *.iso
 
+livecd-lxde-i686-de_DE: reqpackages reqroot setenforce0
+	setarch i686 livecd-creator -dv \
+	--config=l10n/iprediaos-livecd-lxde-de_DE.ks \
+	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
+	--product="IprediaOS $(RELEASEVER)" \
+	--title="IprediaOS $(RELEASEVER)" \
+	--cache=$(CACHEDIR) && chmod 666 *.iso 
+	# Rename iso file
+	mv IprediaOS-$(RELEASEVER)-i686-Live-LXDE.iso \
+	IprediaOS-$(RELEASEVER)-i686-Live-LXDE-de_DE.iso
+	
 reqroot:
 ifneq ($(EUID), 0)
 	@echo "This script must be run as root" 1>&2
