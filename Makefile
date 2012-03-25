@@ -27,6 +27,7 @@ endif
 reqpackages:
 	@rpm -q livecd-tools || (echo "Error: Need livecd-tools" ; exit 2)
 	@rpm -q spin-kickstarts || (echo "Error: Need spin-kickstarts" ; exit 2)
+	@rpm -q l10n-kickstarts || (echo "Error: Need l10n-kickstarts" ; exit 2)
 
 setenforce0:
 	@setenforce 0
