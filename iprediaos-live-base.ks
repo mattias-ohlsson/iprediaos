@@ -29,5 +29,6 @@ i2p
 iprediaos-i2p-block-internet
 iprediaos-i2p-configuration-proxy
 robert
+iprediaos-profile-firefox
 
 %end
