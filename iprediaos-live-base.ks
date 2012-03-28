@@ -4,8 +4,8 @@
 
 repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/releases/1/Everything/$basearch/os/
 
-# Enable ntpd
-services --enabled=ntpd.service
+# Enable ntpd (does not work, moved to post)
+#services --enabled=ntpd.service
 
 %packages
 
@@ -31,4 +31,9 @@ iprediaos-i2p-configuration-proxy
 robert
 iprediaos-profile-firefox
 
+%end
+
+%post
+# Enable ntpd
+/bin/systemctl enable ntpd.service
 %end
