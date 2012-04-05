@@ -13,12 +13,15 @@ repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/
 -transmission*
 -cheese
 -sane-backends
+# Remove empathy (we need irc ulrs from command line)
+-empathy
 # Remove smolt (sent hardware profiles)
 -smolt
 -smolt-firstboot
 
 # Install
 ntp
+xchat
 
 # Rebrand
 -fedora-logos
