@@ -21,7 +21,6 @@ repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/
 
 # Install
 ntp
-xchat
 
 # Rebrand
 -fedora-logos
@@ -36,6 +35,7 @@ iprediaos-i2p-block-internet
 iprediaos-i2p-configuration-proxy
 robert
 iprediaos-profile-firefox
+xchat
 
 %end
 
