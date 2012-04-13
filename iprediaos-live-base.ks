@@ -13,6 +13,7 @@ repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/
 -transmission*
 -cheese
 -sane-backends
+-pidgin
 # Remove empathy (we need irc ulrs from command line)
 -empathy
 # Remove smolt (sent hardware profiles)
