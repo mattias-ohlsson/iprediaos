@@ -22,6 +22,7 @@ repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/
 
 # Install
 ntp
+wireshark-gnome
 
 # Rebrand
 -fedora-logos
