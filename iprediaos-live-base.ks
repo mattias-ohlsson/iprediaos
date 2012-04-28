@@ -45,6 +45,9 @@ xchat
 # Enable ntpd
 /bin/systemctl enable ntpd.service
 
+# Add liveuser to wireshark group
+/usr/sbin/usermod -a -G wireshark liveuser
+
 # Add ipredia sites to published addressbook
 cat > /usr/bin/i2p/eepsite/docroot/hosts.txt << EOF
 ipredia.i2p=Mt9IEnn2aUJgdYSOqhuLttPxPeE8uorzfS9Yqfkvsn1mBy2B0hxDW~j5XEQDLaYVXQDWYyoF3KDK7RzvWoNxueJTmUefxITtbUE0gCYKxo1Vwd-wzCQlOk~9XlMwr3tGoJ2xwlM9i5ehJcupLgPugtXg2n1~bjJO8-aMbb0oFvLnh88Qglxo9NFdz1aiLpODW1QlOhWjiyNia43ejp6bzCT4~Br7i514UQ7JB28kO0EVhLy2SjfVsrOhoFnx4A5eIpePZWj2YUgWsLVvYQ8Yq~KeC2MMdFLDVK3bOrGQVAm1sq-s-DFMv5pg1bUty0zFdcjqYVk50t5Bp2NnOygYPlrxkxuaCv8S0923-noQrereIQ~8H1WDWgKbpgCwDsEubivwf1oYLt8cHwNrU6s0wKvYD-HfHOJTFlnuTfSquxhn-nSFJVd7dlK7DjftlpMmn1fktqfiT6ml2X7svQABrJxIgf3T56DIDPpOUdYMa53Eu81I4S9hq75PgTl5RwHkAAAA
