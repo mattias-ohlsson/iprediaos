@@ -13,6 +13,7 @@ repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/
 -transmission*
 -cheese
 -sane-backends
+
 -pidgin
 # Remove empathy (we need irc ulrs from command line)
 -empathy
@@ -64,6 +65,9 @@ cat >> /etc/rc.d/init.d/livesys << EOF
 
 # Add liveuser to wireshark group
 /usr/sbin/usermod -a -G wireshark liveuser
+
+# Block internet
+/usr/sbin/iprediaos-i2p-block-internet
 EOF
 
 %end
