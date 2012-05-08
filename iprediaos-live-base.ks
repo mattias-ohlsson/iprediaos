@@ -35,6 +35,7 @@ iprediaos-release-notes
 
 # I2P and IprediaOS packages
 i2p
+i2p-desktop
 iprediaos-i2p-block-internet
 iprediaos-i2p-configuration-proxy
 robert
