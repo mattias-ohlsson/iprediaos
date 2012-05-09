@@ -32,6 +32,7 @@ wireshark-gnome
 iprediaos-logos
 iprediaos-release
 iprediaos-release-notes
+iprediaos-bookmarks
 
 # I2P and IprediaOS packages
 i2p
