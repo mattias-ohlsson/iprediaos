@@ -6,6 +6,8 @@
 %include /usr/share/spin-kickstarts/fedora-livecd-desktop.ks
 
 %packages
+# Install packages
+iprediaos-gnome-shell-favorite-apps
 
 # Exclude packages
 -shotwell
