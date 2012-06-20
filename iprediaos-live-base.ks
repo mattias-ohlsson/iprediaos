@@ -69,4 +69,13 @@ cat >> /etc/rc.d/init.d/livesys << EOF
 
 EOF
 
+# Add rpm gpg keys from iprediaos-release
+# Example from fedora-live-base.ks
+#
+# work around for poor key import UI in PackageKit
+rm -f /var/lib/rpm/__db*
+rpm --import /etc/pki/rpm-gpg/RPM-GPG-KEY-iprediaos
+# Note that running rpm recreates the rpm db files which aren't needed or wanted
+rm -f /var/lib/rpm/__db*
+
 %end
