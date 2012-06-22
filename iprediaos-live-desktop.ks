@@ -21,7 +21,7 @@ if [ -f /usr/share/applications/liveinst.desktop ]; then
   # need to move it to anaconda.desktop to make shell happy
   mv /usr/share/applications/liveinst.desktop /usr/share/applications/anaconda.desktop
 
-  cat >> /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override << FOE
+  cat > /usr/share/glib-2.0/schemas/org.gnome.shell.gschema.override << FOE
 [org.gnome.shell]
 favorite-apps=['mozilla-firefox.desktop', 'i2p-router-console.desktop', 'evolution.desktop', 'rhythmbox.desktop', 'nautilus.desktop', 'anaconda.desktop']
 FOE
