@@ -2,9 +2,10 @@
 #
 # IprediaOS Desktop
 
-%include iprediaos-live-base.ks
 %include /usr/share/spin-kickstarts/fedora-livecd-desktop.ks
-%include iprediaos-live-desktop.ks
+%include iprediaos-live-desktop-include.ks
+%include iprediaos-live-base.ks
+
 
 %packages
 # Install packages
