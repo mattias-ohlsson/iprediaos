@@ -30,5 +30,7 @@ sed -i '/# Make the welcome/,/  fi/d' /etc/rc.d/init.d/livesys
 ln -s /usr/share/icons/Fedora/scalable/apps/anaconda.svg /usr/share/icons/hicolor/scalable/apps/anaconda-liveinst.svg
 # Modify the desktop file
 sed -i 's:Icon=anaconda:Icon=anaconda-liveinst:g' /usr/share/applications/liveinst.desktop
+# Update icon cache
+gtk-update-icon-cache /usr/share/icons/hicolor
 
 %end
