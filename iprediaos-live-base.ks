@@ -4,8 +4,6 @@
 
 repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/releases/1/Everything/$basearch/os/
 
-# Enable ntpd (does not work, moved to post)
-#services --enabled=ntpd.service
 
 %packages
 
@@ -22,7 +20,6 @@ repo --name=iprediaos --baseurl=http://download.ipredia.org/pub/iprediaos/linux/
 -smolt-firstboot
 
 # Install
-ntp
 # Script in chroot (add liveuser to the wireshark group)
 wireshark-gnome
 
@@ -50,9 +47,6 @@ echo " #######################################################"
 echo " ########## iprediaos-live-base.ks #####################"
 echo " #######################################################"
 
-
-# Enable ntpd
-/bin/systemctl enable ntpd.service
 
 # Add ipredia sites to published addressbook
 cat > /usr/bin/i2p/eepsite/docroot/hosts.txt << EOF
