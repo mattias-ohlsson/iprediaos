@@ -15,5 +15,6 @@ iprediaos-gnome-shell-favorite-apps
 -shotwell
 -rhythmbox
 -sane-backends-drivers-scanners
+-gnome-games
 
 %end
