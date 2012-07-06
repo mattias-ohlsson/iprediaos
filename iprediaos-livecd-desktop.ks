@@ -15,6 +15,10 @@ iprediaos-gnome-shell-favorite-apps
 -shotwell
 -rhythmbox
 -sane-backends-drivers-scanners
+-gutenprint
+
+# Exclude packages (games)
 -gnome-games
+-aisleriot
 
 %end
