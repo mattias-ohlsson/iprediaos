@@ -62,6 +62,28 @@ livecd-lxde-i686-ru_RU: reqpackages reqroot setenforce0
 	mv IprediaOS-$(RELEASEVER)-i686-Live-LXDE.iso \
 	IprediaOS-$(RELEASEVER)-i686-Live-LXDE-ru_RU.iso
 
+livecd-desktop-i686-fr_FR: reqpackages reqroot setenforce0
+	setarch i686 livecd-creator -dv \
+	--config=l10n/iprediaos-livecd-desktop-fr_FR.ks \
+	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
+	--product="IprediaOS $(RELEASEVER)" \
+	--title="IprediaOS $(RELEASEVER)" \
+	--cache=$(CACHEDIR) && chmod 666 *.iso 
+	# Rename iso file
+	mv IprediaOS-$(RELEASEVER)-i686-Live-Desktop.iso \
+	IprediaOS-$(RELEASEVER)-i686-Live-Desktop-fr_FR.iso
+
+livecd-lxde-i686-fr_FR: reqpackages reqroot setenforce0
+	setarch i686 livecd-creator -dv \
+	--config=l10n/iprediaos-livecd-lxde-fr_FR.ks \
+	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
+	--product="IprediaOS $(RELEASEVER)" \
+	--title="IprediaOS $(RELEASEVER)" \
+	--cache=$(CACHEDIR) && chmod 666 *.iso 
+	# Rename iso file
+	mv IprediaOS-$(RELEASEVER)-i686-Live-LXDE.iso \
+	IprediaOS-$(RELEASEVER)-i686-Live-LXDE-fr_FR.iso
+
 livecd-lxde-i686-sv_SE: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
 	--config=l10n/iprediaos-livecd-lxde-sv_SE.ks \
