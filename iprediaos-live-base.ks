@@ -47,6 +47,9 @@ echo " #######################################################"
 echo " ########## iprediaos-live-base.ks #####################"
 echo " #######################################################"
 
+# Temporary fix for: after install I see SYSFONT=True rather than a font name
+# https://bugzilla.redhat.com/show_bug.cgi?id=799401
+sed -i 's:SYSFONT=True:SYSFONT=latarcyrheb-sun16:g' /boot/grub2/grub.cfg
 
 # Add ipredia sites to published addressbook
 cat > /usr/bin/i2p/eepsite/docroot/hosts.txt << EOF
