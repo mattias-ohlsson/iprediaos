@@ -70,6 +70,24 @@ EOF
 # Add iprediaos modifications to livesys start script
 cat >> /etc/rc.d/init.d/livesys << EOF
 
+# Make i2psnark usable
+# - change download folder
+# - change security settings
+#
+# change i2psnarks download folder
+sed -i 's:i2psnark.dir=i2psnark:i2psnark.dir=/home/liveuser/I2PSnark Downloads:g' /usr/bin/i2p/i2psnark.config
+# use insecure files and change umask (we are safe without mod 600)
+echo "i2p.insecureFiles=true" >> /usr/bin/i2p/router.config
+sed -i '2 a umask 007' /etc/init.d/i2p
+# create the download folder
+mkdir /home/liveuser/I2PSnark\ Downloads
+# change group and owner on the folder
+chown liveuser:liveuser /home/liveuser/I2PSnark\ Downloads
+# give i2p access to liveusers home folder
+setfacl -m g:i2p:x /home/liveuser
+# give i2p and liveuser full access to every file in I2PSnark Downloads
+setfacl -m g:i2p:rwx,d:g:i2p:rwx,g:liveuser:rwx,d:g:liveuser:rwx /home/liveuser/I2PSnark\ Downloads
+
 # Add liveuser to wireshark group
 /usr/sbin/usermod -a -G wireshark liveuser
 
