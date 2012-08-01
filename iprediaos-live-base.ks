@@ -38,6 +38,7 @@ iprediaos-i2p-configuration-proxy
 robert
 iprediaos-profile-firefox
 xchat
+i2psnark-desktop
 
 %end
 
