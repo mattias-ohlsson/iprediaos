@@ -17,6 +17,7 @@ cat >> /etc/rc.d/init.d/livesys << EOF
 # Add files to desktop
 cp /usr/share/applications/firefox.desktop /home/liveuser/Desktop/
 cp /usr/share/applications/i2p-router-console.desktop /home/liveuser/Desktop/
+cp /usr/share/applications/xchat.desktop /home/liveuser/Desktop/
 EOF
 
 %end
