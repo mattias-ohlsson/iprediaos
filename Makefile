@@ -13,10 +13,10 @@ livecd-desktop-i686: reqpackages reqroot setenforce0
 
 livecd-lxde-i686: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv --config=iprediaos-livecd-lxde.ks \
-        --fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
+	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
 	--product="IprediaOS $(RELEASEVER)" \
-        --title="IprediaOS $(RELEASEVER)" \
-        --cache=$(CACHEDIR) && chmod 666 *.iso
+	--title="IprediaOS $(RELEASEVER)" \
+	--cache=$(CACHEDIR) && chmod 666 *.iso
 
 livecd-desktop-i686-de_DE: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
