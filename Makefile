@@ -5,7 +5,7 @@ EUID		:= $(shell id -u)
 CACHEDIR	:= "/tmp/iprediaosbuild"
 
 livecd-desktop-i686: reqpackages reqroot setenforce0
-	setarch i686 livecd-creator -dv --config=iprediaos-livecd-desktop.ks \
+	setarch i686 livecd-creator -dv --config=/usr/share/spin-kickstarts/iprediaos-livecd-desktop.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -13,7 +13,7 @@ livecd-desktop-i686: reqpackages reqroot setenforce0
 	--cache=$(CACHEDIR) && chmod 666 *.iso
 
 livecd-lxde-i686: reqpackages reqroot setenforce0
-	setarch i686 livecd-creator -dv --config=iprediaos-livecd-lxde.ks \
+	setarch i686 livecd-creator -dv --config=/usr/share/spin-kickstarts/iprediaos-livecd-lxde.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -22,7 +22,7 @@ livecd-lxde-i686: reqpackages reqroot setenforce0
 
 livecd-desktop-i686-de_DE: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-desktop-de_DE.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-desktop-de_DE.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -34,7 +34,7 @@ livecd-desktop-i686-de_DE: reqpackages reqroot setenforce0
 
 livecd-lxde-i686-de_DE: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-lxde-de_DE.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-lxde-de_DE.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -46,7 +46,7 @@ livecd-lxde-i686-de_DE: reqpackages reqroot setenforce0
 
 livecd-desktop-i686-es_ES: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-desktop-es_ES.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-desktop-es_ES.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -58,7 +58,7 @@ livecd-desktop-i686-es_ES: reqpackages reqroot setenforce0
 
 livecd-lxde-i686-es_ES: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-lxde-es_ES.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-lxde-es_ES.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -70,7 +70,7 @@ livecd-lxde-i686-es_ES: reqpackages reqroot setenforce0
 
 livecd-desktop-i686-ru_RU: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-desktop-ru_RU.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-desktop-ru_RU.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -82,7 +82,7 @@ livecd-desktop-i686-ru_RU: reqpackages reqroot setenforce0
 
 livecd-lxde-i686-ru_RU: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-lxde-ru_RU.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-lxde-ru_RU.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -94,7 +94,7 @@ livecd-lxde-i686-ru_RU: reqpackages reqroot setenforce0
 
 livecd-desktop-i686-fr_FR: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-desktop-fr_FR.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-desktop-fr_FR.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -106,7 +106,7 @@ livecd-desktop-i686-fr_FR: reqpackages reqroot setenforce0
 
 livecd-lxde-i686-fr_FR: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-lxde-fr_FR.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-lxde-fr_FR.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -118,7 +118,7 @@ livecd-lxde-i686-fr_FR: reqpackages reqroot setenforce0
 
 livecd-desktop-i686-sv_SE: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-desktop-sv_SE.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-desktop-sv_SE.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Desktop \
 	--product="IprediaOS $(RELEASEVER)" \
@@ -130,7 +130,7 @@ livecd-desktop-i686-sv_SE: reqpackages reqroot setenforce0
 
 livecd-lxde-i686-sv_SE: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
-	--config=l10n/iprediaos-livecd-lxde-sv_SE.ks \
+	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-lxde-sv_SE.ks \
 	--releasever=$(RELEASEVER) \
 	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-LXDE \
 	--product="IprediaOS $(RELEASEVER)" \
