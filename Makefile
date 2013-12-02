@@ -20,6 +20,14 @@ livecd-lxde-i686: reqpackages reqroot setenforce0
 	--title="IprediaOS $(RELEASEVER)" \
 	--cache=$(CACHEDIR) && chmod 666 *.iso
 
+live-mini-i686: reqpackages reqroot setenforce0
+	setarch i686 livecd-creator -dv --config=/usr/share/spin-kickstarts/iprediaos-live-mini.ks \
+	--releasever=$(RELEASEVER) \
+	--fslabel=IprediaOS-$(RELEASEVER)-i686-Live-Mini \
+	--product="IprediaOS $(RELEASEVER)" \
+	--title="IprediaOS $(RELEASEVER)" \
+	--cache=$(CACHEDIR) && chmod 666 *.iso
+
 livecd-desktop-i686-de_DE: reqpackages reqroot setenforce0
 	setarch i686 livecd-creator -dv \
 	--config=/usr/share/spin-kickstarts/l10n/iprediaos-livecd-desktop-de_DE.ks \
